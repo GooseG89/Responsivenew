@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.header{  
+  display: flex;
+  background-color:#ededed;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.logo{
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+
+.container {
+display: flex;
+background-image: url(images/background.jpg);
+background-repeat: no-repeat;
+align-items: center;
+justify-content: center;
+width: auto;
+}
+
+.content {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  width: auto;
+  margin:0;
+
+}
+
+.form-box{
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #0707072f;
+  padding-top: 15px;
+  width: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+
+
+.p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size:x-large;
+    color: black;
+    word-spacing: 3px;
+    line-height: 1.6;
+  }
+
+
+input{
+  padding: 12px;
+}
+
+button{
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  font-size: larger;
+  border: 2px solid white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: blue;
+  border: 2px solid black;
+}
+
+  
+.row {
+  display: flex;
+  display: -webkit-flex;
+  background-color: white;
+
+}
+
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+}
+
+
+.C2H {
+  text-align: center;
+}
+
+
+img#myself {
+  width: 100px;
+  border-radius: 30%;
+  border: 2px solid rgba(128, 128, 128, 0.514);
+}
+  
+.content3 {
+  background-color: #ededed;
+  padding: 20px; 
+  height: fit-content;
+  text-align: center;
+}
+
+.C3TEXT{
+  margin: 0;
+  text-align: center;
+  width:auto;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .header{
+    margin: 0;
+  }
+
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;  }
+
+  .container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+}
